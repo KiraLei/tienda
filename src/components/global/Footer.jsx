@@ -1,8 +1,9 @@
+import '../../styles/Footer.scss'
 function Footer(){
 
     return(
         <footer>
-            <p>Este es mi footer</p>
+            <p>© 2020  Mirian, All rights reserved.</p>
         </footer>
     )
 }
