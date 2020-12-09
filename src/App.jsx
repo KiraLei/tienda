@@ -3,15 +3,18 @@ import Nav from './components/global/Nav';
 import Hero from './components/Home/Hero';
 import Footer from './components/global/Footer';
 import laundry from './assets/laundry.png';
+import Cards from './components/Product/Cards';
 
 function App() {
   return (
-    <div>
+    <div className='principal'>
       <Nav/>
-   <h1 className= "new">!Soy nueva en este Mundo!</h1>
-   <p className ="parrafo" >Aqui sera mi e-commerce wujuuuuu!!!!</p>
-   <Hero/>
-   <img src={laundry} alt='imagenn'/>
+      <Cards/>
+     
+
+   
+
+   
    <Footer/>
    </div>
   );
