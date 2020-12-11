@@ -10,11 +10,6 @@ function App() {
     <div className='principal'>
       <Nav/>
       <Cards/>
-     
-
-   
-
-   
    <Footer/>
    </div>
   );

@@ -5,10 +5,11 @@
 
   }
 nav{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
     align-items: center;
     box-shadow: 2px 2px 5px #999;
     background: rgba(249, 255, 251, 0.1);
@@ -16,8 +17,8 @@ nav{
 
     
     img{
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
     }
     ul{
         display: flex;
