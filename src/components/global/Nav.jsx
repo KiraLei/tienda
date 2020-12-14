@@ -1,4 +1,4 @@
-import logo from "../../assets/logu.png";
+import logo from "../../assets/logoreal1.png";
 import "../../styles/Nav.scss";
 import CartWidget from "../global/CartWidget";
 
@@ -6,7 +6,7 @@ function Nav() {
   return (
     <div className="navbar">
       <nav>
-          <img src={logo} alt="logo" />
+          <img className="logo" src={logo} alt="logo" />
         <ul>
           <li>
             <a href="#">Nosotros</a>
