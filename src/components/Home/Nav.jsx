@@ -1,6 +1,6 @@
 import logo from "../../assets/logoreal1.png";
 import "../../styles/Nav.scss";
-import CartWidget from "../global/CartWidget";
+import CartWidget from "./CartWidget";
 
 function Nav() {
   return (

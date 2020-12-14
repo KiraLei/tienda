@@ -1,8 +1,7 @@
 import './styles/App.css';
-import Nav from './components/global/Nav';
+import Nav from './components/Home/Nav';
 import Hero from './components/Home/Hero';
-import Footer from './components/global/Footer';
-import laundry from './assets/laundry.png';
+import Footer from './components/Home/Footer';
 import Cards from './components/Product/Cards';
 
 function App() {

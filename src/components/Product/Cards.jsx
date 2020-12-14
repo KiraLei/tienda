@@ -1,6 +1,7 @@
 import product from "../../assets/product.png";
 import "../../styles/Cards.scss";
 import ButtonAdd from '../global/ButtonAdd';
+import ProductQuantity from '../Product/ProductQuantity';
 
 function Cards() {
   return (
@@ -15,6 +16,7 @@ function Cards() {
             Precio: <span>S/8.54</span>
           </p>
           <p>detalles</p>
+          <ProductQuantity/>
           <ButtonAdd/>
         </div>
       </div>
@@ -28,6 +30,7 @@ function Cards() {
             Precio: <span>S/8.54</span>
           </p>
           <p>detalles</p>
+          <ProductQuantity/>
           <ButtonAdd/>
         </div>
       </div>
@@ -41,6 +44,7 @@ function Cards() {
             Precio: <span>S/8.54</span>
           </p>
           <p>detalles</p>
+          <ProductQuantity/>
           <ButtonAdd/>
         </div>
       </div>
@@ -54,6 +58,7 @@ function Cards() {
             Precio: <span>S/8.54</span>
           </p>
           <p>detalles</p>
+          <ProductQuantity/>
           <ButtonAdd/>
         </div>
       </div>
@@ -67,6 +72,7 @@ function Cards() {
             Precio: <span>S/8.54</span>
           </p>
           <p>detalles</p>
+          <ProductQuantity/>
           <ButtonAdd/>
         </div>
       </div>
@@ -80,6 +86,7 @@ function Cards() {
             Precio: <span>S/8.54</span>
           </p>
           <p>detalles</p>
+          <ProductQuantity/>
           <ButtonAdd/>
         </div>
       </div>
@@ -93,6 +100,7 @@ function Cards() {
             Precio: <span>S/8.54</span>
           </p>
           <p>detalles</p>
+          <ProductQuantity/>
           <ButtonAdd/>
         </div>
       </div>
@@ -106,6 +114,7 @@ function Cards() {
             Precio: <span>S/8.54</span>
           </p>
           <p>detalles</p>
+          <ProductQuantity/>
           <ButtonAdd/>
         </div>
       </div>
@@ -119,6 +128,7 @@ function Cards() {
             Precio: <span>S/8.54</span>
           </p>
           <p>detalles</p>
+          <ProductQuantity/>
           <ButtonAdd/>
         </div>
       </div>
