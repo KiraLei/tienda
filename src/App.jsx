@@ -2,13 +2,13 @@ import './styles/App.css';
 import Nav from './components/Home/Nav';
 import Hero from './components/Home/Hero';
 import Footer from './components/Home/Footer';
-import Cards from './components/Product/Cards';
+import ListProducts from './components/Product/ListProducts';
 
 function App() {
   return (
     <div className='principal'>
       <Nav/>
-      <Cards/>
+      <ListProducts/>
    <Footer/>
    </div>
   );
