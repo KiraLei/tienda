@@ -6,7 +6,7 @@ function ProductQuantity(){
 
     return(
         <div className="product-quantity">
-            <button className="disable" onClick= {()=>{setQuantity(quantity - 1 )}} disabled={quantity <= 0}>-</button>
+            <button className="disable" onClick= {()=>{setQuantity(quantity - 1 )}} disabled={quantity <= 1}>-</button>
             <input type="text" value={quantity} disabled />
             <button onClick={()=>{setQuantity( quantity + 1)}}>+</button>   
         </div>
