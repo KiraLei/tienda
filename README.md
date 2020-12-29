@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Ecommerce KIRITA BAGS React App
+##Proyecto ECOMMERCE Bolsas ecologicas y mas.
+--------------------------------------------------------------------------------------------------------------
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Se esta usando SAASS para el css y tiene diversos componente 
+como el listado de productos el card donde se visualiza producto 
+por producto con el nombre el precio y su respectivo
+detalle, por otro lado se añadio el contador para que el usuario
+pueda añadir la cantidad que deses y este posterioemente se podra
+mostrar en el wishcart para que por ultimo se proceda a la compra de algun producto
+Tambien tiene el Nostros donde se habla a cerca de la empresa y el contactanos.
+
+Para poder ejecutar el proyecto despues de clonarlo puedes poner el siguiente comando:
 
 ## Available Scripts
 
@@ -69,12 +80,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-##Proyecto ECOMMERCE Bolsas ecologicas y mas.
---------------------------------------------------------------------------------------------------------------
 
-### Este proyecto esta hecho en React
-
-Se esta usando SAASS para el css y tiene diversos componente como el listado de productos
-el card donde se visualiza producto por producto con el nombre el precio y su respectivo detalle, por otro lado se añadio el contador para que el usuario pueda añadir la cantidad que deses y este posterioemente se podra mostrar en el wishcart para que por ultimo se proceda a la compra de algun producto
-Tambien tiene el Nostros donde se habla a cerca de la empresa y el contactanos.
 
