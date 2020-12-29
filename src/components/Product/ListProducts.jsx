@@ -62,7 +62,7 @@ function ListProducts() {
   const getProducts = new Promise((resolve, reject) => {
     setTimeout(()=>{
       resolve(products);
-    },3000)
+    },0)
   })
 
   

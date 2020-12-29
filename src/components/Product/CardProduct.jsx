@@ -2,6 +2,7 @@ import product from "../../assets/product.png";
 import "../../styles/Cards.scss";
 import ButtonAdd from '../global/ButtonAdd';
 import ProductQuantity from './ProductQuantity';
+import { Link } from "react-router-dom";
 
 function Cards({titulo, precio, cantidad}) {
   return (
@@ -16,7 +17,7 @@ function Cards({titulo, precio, cantidad}) {
             Precio: S/ <span>{precio}</span>
           </p>
           
-          <p>detalles</p>
+          <Link to="/detail">detalles</Link>
           <ProductQuantity/>
           <ButtonAdd/>
         </div>
