@@ -8,6 +8,7 @@ import ItemDetailContainer from "../src/components/Product/ItemDetailContainer";
 import Error404 from "../src/components/global/Error404/";
 import Us from "./components/Us/index";
 import Contact from "./components/Contact/index";
+import DetailProduct from "../src/components/Product/DetailProduct";
 
 function App() {
   return (

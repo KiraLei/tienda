@@ -1,11 +1,10 @@
-
-import "../../styles/Cards.scss";
+import  DetailProduct  from "../Product/DetailProduct";
 
 function ItemDetailContainer({titulo, precio, cantidad}) {
   return (
       <div className="itemDetailContainer">
-      
-          <ItemDetailContainer/>
+        <h2>Detalle del producto</h2>
+          <DetailProduct/>
       
       </div>
   );

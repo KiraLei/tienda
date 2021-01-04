@@ -1,29 +1,46 @@
 import product from "../../assets/product.png";
-import "../../styles/Cards.scss";
-import ButtonAdd from '../global/ButtonAdd';
-import ProductQuantity from './ProductQuantity';
+import "../../styles/DetailProduct.scss";
+import ButtonAdd from "../global/ButtonAdd";
+import ProductQuantity from "./ProductQuantity";
 
-function DetailProduct({titulo, precio, cantidad}) {
+function DetailProduct({ titulo, precio, cantidad }) {
   return (
-      <>
-      <p>Detalle del producto</p>
-      <div className="card">
+    <>
+      <div className="cont">
         <figure>
           <img src={product} alt="producto" />
         </figure>
         <div className="information">
-          <p>{titulo}</p>
-          <p> Cantidad: {cantidad} unid.</p>
+          <h3>Bolsa de 6L</h3>
           <p>
-            Precio: S/ <span>{precio}</span>
+            Precio: S/ 25.00<span>{precio}</span>
           </p>
-          
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat natus ipsam dolores quod illum expedita inventore. Quis, cumque vero qui quod earum esse doloremque repellat sit provident at impedit.</p>
-          <ProductQuantity/>
-          <ButtonAdd/>
+          <ProductQuantity />
+          <ButtonAdd />
+          <h4>Description</h4>
+          <p>
+            ☺ Biodegradable non-woven nursery bags plant grow bags fabric pots
+            plants pouch home garden supply. <br />
+            ☺ Eco-friendly breathable and biodegradable non-woven material, no
+            need to remove the bag when transplanting, improving the plants
+            survival rate. <br />
+            ☺ Excellent water absorption and permeability, nutrient and moisture
+            can be absorbed easily. <br />
+            ☺ High survival rate, fast growth, ensure the plant grow well.
+            Prevent the seedling from forming entangling roots and decaying
+            roots. <br />☺ Multi purpose. Non-woven seedling bags can be
+            suitable for a variety of planting needs, they are perfect for
+            flowers, vegetables, saplings, covering your garden.
+          </p>
+          <h4>Features</h4>
+          <p>
+            Material: nonwoven <br />
+            Color: please check the picture <br />
+            Size: please allow tiny size deviations due to human measurement
+          </p>
         </div>
       </div>
-      </>
+    </>
   );
 }
 export default DetailProduct;
