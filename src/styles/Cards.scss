@@ -1,13 +1,14 @@
-.container-cards{
+
+.cards{
     width: 100%;
     max-width: 1300px;
-    min-height: calc(100vh - 330px - 100px);
     display: flex; 
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-evenly;
     
 }
+
 .card{
     max-width: 312px;
     max-height: 650px;

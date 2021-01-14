@@ -4,6 +4,10 @@
 .parrafo{
     color: brown;
 }
+.container{
+    min-height: calc(100vh - 330px - 100px); 
+    
+}
 
 
     

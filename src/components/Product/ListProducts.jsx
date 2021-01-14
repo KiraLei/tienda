@@ -78,7 +78,7 @@ function ListProducts() {
 
 
   return (
-    <div className="container-cards">
+    <div className="container cards">
         {items.length ?
         <>
           {
