@@ -6,34 +6,27 @@ import { NavLink } from "react-router-dom";
 function Nav() {
   const menuLinks = [
     {
-      text: 'Bolsas',
-      ruta: '/',
+      text: "Bolsas",
+      ruta: "/category/bolsas",
     },
     {
-      text: 'Aceites',
-      ruta: '',
+      text: "Aceites",
+      ruta: "/category/aceites",
     },
     {
-      text: 'Aseo Personal',
-      ruta: '',
+      text: "Aseo Personal",
+      ruta: "/category/aseo-personal",
     },
     {
-      text: 'Contactanos',
-      ruta: '/Contact',
+      text: "Contactanos",
+      ruta: "/Contact",
     },
     {
-      text: 'Nosotros',
-      ruta: '/Us',
+      text: "Nosotros",
+      ruta: "/Us",
     },
-  ]
-
-
-  return (
-    <div className="navbar">
-      <nav>
-        <img className="logo" src={logo} alt="logo" />
-        <ul>
-          <li>
+  ];
+  /* <li>
             <NavLink to="/Us">Nosotros</NavLink>
           </li>
           <li>
@@ -44,7 +37,19 @@ function Nav() {
           </li>
           <li>
             <NavLink to="/Contact">Contactanos</NavLink>
-          </li>
+          </li>*/
+
+  return (
+    <div className="navbar">
+      <nav>
+        <img className="logo" src={logo} alt="logo" />
+        <ul>
+          {menuLinks.map((seccion, index) => (
+            <li>
+              <NavLink key={index} to={seccion.ruta}>{seccion.text}</NavLink>
+            </li>
+          ))}
+
           <CartWidget />
         </ul>
       </nav>
