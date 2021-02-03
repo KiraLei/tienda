@@ -9,30 +9,33 @@ import Error404 from "../src/components/global/Error404/";
 import Us from "./components/Us/index";
 import Contact from "./components/Contact/index";
 import DetailProduct from "../src/components/Product/DetailProduct";
+import { Store } from "../src/store";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Nav />
-      <Switch>
-        <Route exact path="/">
-          <ListProducts />
-        </Route>
-        <Route exact path="/Us">
-          <Us/>
-        </Route>
-        <Route exact path="/Contact">
-          <Contact/>
-        </Route>
-        <Route path="/detail">
-          <ItemDetailContainer/>
-        </Route>
-        <Route path="*">
-          <Error404 />
-        </Route>
-      </Switch>
-      <Footer />
-    </BrowserRouter>
+    <Store.Provider >
+      <BrowserRouter>
+        <Nav />
+        <Switch>
+          <Route exact path="/">
+            <ListProducts />
+          </Route>
+          <Route exact path="/Us">
+            <Us />
+          </Route>
+          <Route exact path="/Contact">
+            <Contact />
+          </Route>
+          <Route path="/detail">
+            <ItemDetailContainer />
+          </Route>
+          <Route path="*">
+            <Error404 />
+          </Route>
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    </Store.Provider>
   );
 }
 

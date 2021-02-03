@@ -1,6 +1,6 @@
 const Error404 = () =>{
     return(
-        <div>
+        <div className="container">
             <h2>Error 404</h2>
             <p>Estás buscando algo que no existe</p>
         </div>

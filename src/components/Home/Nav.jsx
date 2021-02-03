@@ -4,6 +4,30 @@ import CartWidget from "./CartWidget";
 import { NavLink } from "react-router-dom";
 
 function Nav() {
+  const menuLinks = [
+    {
+      text: 'Bolsas',
+      ruta: '/',
+    },
+    {
+      text: 'Aceites',
+      ruta: '',
+    },
+    {
+      text: 'Aseo Personal',
+      ruta: '',
+    },
+    {
+      text: 'Contactanos',
+      ruta: '/Contact',
+    },
+    {
+      text: 'Nosotros',
+      ruta: '/Us',
+    },
+  ]
+
+
   return (
     <div className="navbar">
       <nav>

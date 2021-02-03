@@ -1,12 +1,12 @@
 import "../Us/Us.scss";
-import ejp from "../../assets/eco1.svg";
+import eco from "../../assets/eco1.svg";
 const Us = () => {
   return (
     <div className="container">
       <section class="containere about-us">
         <h2 class="title">Nosotros </h2>
         <div class="container-about-us">
-          <img src={ejp} alt='imagen' class="image-about-us" />
+          <img src={eco} alt='imagen' class="image-about-us" />
           <div class="content-texts">
             <h3>
               <span>1</span>Los mejores productos
