@@ -4,7 +4,8 @@ import ButtonAdd from '../global/ButtonAdd';
 import ProductQuantity from './ProductQuantity';
 import { Link } from "react-router-dom";
 
-function Cards({titulo, precio, cantidad}) {
+function Cards({titulo, precio, cantidad, id}) {
+
   return (
       <div className="card">
         <figure>
@@ -12,12 +13,12 @@ function Cards({titulo, precio, cantidad}) {
         </figure>
         <div className="information">
           <p>{titulo}</p>
-          <p> Cantidad: {cantidad} unid.</p>
+          <p> Cantidad: {cantidad}</p>
           <p>
             Precio: S/ <span>{precio}</span>
           </p>
           
-          <Link to="/detail">detalles</Link>
+       <Link to={`/item/${id}`}>detalles</Link>
           <ProductQuantity/>
           <ButtonAdd/>
         </div>

@@ -14,20 +14,14 @@ const Category = () => {
         }
     }, [category_name]) 
 
-    /*
-    const {pepito} = useParams();
+    /*<h2>{category_name.split('-').join(' ')}</h2>*/
 
-    useEffect(()=>{
-      //  console.log(pepito)
-    }, [pepito])*/
-
-    return (
-        
-        <section className="category">
-            <h2>{category_name.split('-').join(' ')}</h2>
-            <ListProducts products={prods} />
+    return (   
+        <section className="container cards">
+           
+           Holaaaaa
+           <ListProducts products={prods}></ListProducts>
         </section>
-      /*  <p>{pepito}</p>*/
     )
 }
 

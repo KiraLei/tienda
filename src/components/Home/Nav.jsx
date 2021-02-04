@@ -1,7 +1,7 @@
 import logo from "../../assets/logoreal1.png";
 import "../../styles/Nav.scss";
 import CartWidget from "./CartWidget";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Nav() {
   const menuLinks = [
@@ -42,7 +42,7 @@ function Nav() {
   return (
     <div className="navbar">
       <nav>
-        <img className="logo" src={logo} alt="logo" />
+        <Link to={"/"}> <img className="logo" src={logo} alt="logo" /> </Link>
         <ul>
           {menuLinks.map((seccion, index) => (
             <li>
