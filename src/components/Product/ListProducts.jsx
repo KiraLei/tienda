@@ -32,10 +32,12 @@ function ListProducts() {
           {items.map((item) => (
             <Cards
               key={item.id}
+              id={item.id}
+              imagen={item.img}
               titulo={item.title}
               precio={item.price}
               cantidad={item.quantity}
-              producto ={items}
+              producto={items}
             ></Cards>
           ))}
         </>

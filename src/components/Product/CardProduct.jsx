@@ -4,12 +4,13 @@ import ButtonAdd from '../global/ButtonAdd';
 import ProductQuantity from './ProductQuantity';
 import { Link } from "react-router-dom";
 
-function Cards({titulo, precio, cantidad, id}) {
+function Cards({titulo, precio, cantidad, id, imagen}) {
 
   return (
+    
       <div className="card">
         <figure>
-          <img src={product} alt="producto" />
+          <img src={imagen} alt="producto" />
         </figure>
         <div className="information">
           <p>{titulo}</p>

@@ -5,12 +5,16 @@ import { useParams } from "react-router-dom";
 
 function ItemDetailContainer({titulo, precio, cantidad}) {
   const [producto, setProducto] = useState();
- // const {itemid}
+  const {itemid} = useParams();
+
   const promiseProduct = new Promise((resolve, reject)=>{
     setTimeout(()=>{
-      resolve(products[0]);
+      //resolve(products[0]);
+      const productClick = products.find(producto=> producto.id == itemid)
+      resolve(productClick);
     },500);
   });
+
 const callProduct= () =>{
   promiseProduct.then((respuesta)=>setProducto(respuesta));
 }

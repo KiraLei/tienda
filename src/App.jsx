@@ -9,7 +9,6 @@ import Us from "./components/Us/index";
 import Contact from "./components/Contact/index";
 import { Store } from "../src/store";
 import Category from "./components/Category/index";
-import foto from "../src/assets/images/bag1.png";
 
 function App() {
   /* <Route exact path="/category/:name?">
