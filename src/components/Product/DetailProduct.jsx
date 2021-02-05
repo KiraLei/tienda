@@ -8,11 +8,7 @@ function DetailProduct({ producto }) {
   return (
     <>
     <div>
-      <ol>
-        <li>
-          <Link to={`/${producto.category}`}>{producto.category.split('-').join(' ')}</Link>
-        </li>
-      </ol>
+     
     </div>
       <div className="cont">
         <figure>

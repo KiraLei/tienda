@@ -24,6 +24,13 @@ function ItemDetailContainer({ titulo, precio, cantidad }) {
 
   return producto ? (
     <div className="title-detail">
+       <ol className="breadcrum">
+        <li>
+          <Link to={`/category/${producto.category}`}>{producto.category.split('-').join(' ')}</Link>
+        </li>
+        <li>{'>'}</li>
+        <li>{producto.title}</li>
+      </ol>
       <h2 className="h2">Detalle del producto</h2>
       <DetailProduct producto={producto} />
     </div>

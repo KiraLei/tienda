@@ -8,15 +8,17 @@ import Error404 from "../src/components/global/Error404/";
 import Us from "./components/Us/index";
 import Contact from "./components/Contact/index";
 import { Store } from "../src/store";
-import Category from "./components/Category/index";
+import { useState } from "react";
+
 
 function App() {
-  /* <Route exact path="/category/:name?">
-            <Category/>
-          </Route>*/
+  const [data, setData] = useState({
+    items: [],
+    quantity: 0,
+  });
 
   return (
-    <Store.Provider>
+    <Store.Provider value={[data, setData]}>
       <BrowserRouter>
         <Nav />
         <Switch>

@@ -8,7 +8,6 @@
     padding-left: 5%;
     display: flex;
     flex-direction: column;
-   
 
     input,
     textarea,
@@ -29,7 +28,6 @@
       width: 100%;
     }
     input[type="submit"] {
-     
       margin-top: 20px;
       max-width: 150px;
       padding: 0.5rem;
@@ -55,32 +53,43 @@
 .ul-comment {
   margin-left: 5%;
   list-style: none;
-  
+
   li {
     margin-bottom: 10px;
     p {
       padding: 0% 0% 0% 0%;
       display: block;
-     
     }
   }
 }
-.line-division{
-    color: slategray;
-    width: 100%;
-    border: slategrey;
-
+.line-division {
+  color: slategray;
+  width: 100%;
+  border: slategrey;
 }
-section{
+section {
+  max-width: 90%;
+  width: 100%;
+  background-color: rgba(133, 166, 141, 0.08);
+  margin: 2rem auto;
+  padding-left: 80px;
+  padding-right: 20px;
+  padding-top: 40px;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+}
 
-    max-width: 90%;
-    width: 100%;
-    background-color: rgba(133, 166, 141, 0.08);
-    margin: 2rem auto;
-    padding-left: 80px;
-    padding-right: 20px;
-    padding-top: 40px;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 0.5rem rgba(0,0,0,.15);
-
+.breadcrum {
+  margin: -1rem 0 1rem 2rem;
+  display: flex;
+  color: var(--text);
+  li {
+    font-size: 16px;
+    padding-right: 0.2rem;
+    list-style: none;
+    color: var(--text);
+  }
+  li::first-letter {
+    text-transform: uppercase;
+  }
 }
