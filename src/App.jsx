@@ -15,13 +15,15 @@ function App() {
             <Category/>
           </Route>*/
 
-
   return (
-    <Store.Provider >
+    <Store.Provider>
       <BrowserRouter>
         <Nav />
         <Switch>
           <Route exact path="/">
+            <ListProducts />
+          </Route>
+          <Route exact path="/category/:categoryid?">
             <ListProducts />
           </Route>
           <Route path="/item/:itemid?">
@@ -32,7 +34,7 @@ function App() {
           </Route>
           <Route exact path="/Contact">
             <Contact />
-          </Route>       
+          </Route>
           <Route path="*">
             <Error404 />
           </Route>

@@ -1,4 +1,3 @@
-import product from "../../assets/product.png";
 import "../../styles/Cards.scss";
 import ButtonAdd from '../global/ButtonAdd';
 import ProductQuantity from './ProductQuantity';
