@@ -7,9 +7,6 @@ import { Link } from "react-router-dom";
 function DetailProduct({ producto }) {
   return (
     <>
-    <div>
-     
-    </div>
       <div className="cont">
         <figure>
           <img src={`${producto.img}`} alt="imagen producto" />
@@ -20,7 +17,6 @@ function DetailProduct({ producto }) {
             Precio: S/<span>{producto.price}</span>
           </p>
           <ProductQuantity />
-          <ButtonAdd />
           <h4>Description</h4>
           <p>{producto.description}</p>
           <h4>Features</h4>
@@ -30,7 +26,7 @@ function DetailProduct({ producto }) {
             Size: {producto.size}
           </p>
         </div>
-        <div className="line-division"/>
+        <div className="line-division" />
       </div>
       <Comments />
     </>

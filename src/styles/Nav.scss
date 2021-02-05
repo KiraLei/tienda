@@ -56,40 +56,36 @@ nav {
 
 .cart {
   margin-left: 2rem;
-
   vertical-align: middle;
-
   img {
     width: 30px;
     height: 30px;
   }
   span {
+    position: relative;
     font-size: 12px;
     background-color: #02730a;
     color: #fff;
-    padding: 0.2rem 0.4rem;
+    padding: 0.2rem 0.45rem;
     border-radius: 50% 50%;
     bottom: 25px;
     right: 10px;
   }
-
- 
 }
 .minicart {
-    width: 20%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: royalblue;
-    z-index: 2;
-    box-shadow: -0.3rem 0 0.3rem rgba(0, -0, -0, -0.2);
-    
-  }
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: royalblue;
+  z-index: 2;
+  box-shadow: -0.3rem 0 0.3rem rgba(0, -0, -0, -0.2);
+}
 
-  .close{
-      display: none;
-  }
-  .open{
-      display: block;
-  }
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}

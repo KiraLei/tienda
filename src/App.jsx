@@ -14,7 +14,7 @@ import { useState } from "react";
 function App() {
   const [data, setData] = useState({
     items: [],
-    quantity: 0,
+    quantity: 15,
   });
 
   return (

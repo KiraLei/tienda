@@ -1,11 +1,20 @@
-.button-add{
-    background-color: #1aaa9d;
-    padding: 0.5rem;
-    border-radius: 10px;
+.button-add {   
+     background-color: #1aaa9d;
+  padding: 0.5rem;
+  border-radius: 10px;
+ 
+  font-weight: 500;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  button {
     color: #fff;
-    font-weight: 500;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
+    background-color: #1aaa9d;
+    border: none;
+  }
+  button:focus{
+      border: none;
+      outline: none;
+  }
 }
