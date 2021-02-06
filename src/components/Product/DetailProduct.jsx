@@ -1,8 +1,8 @@
 import "../../styles/DetailProduct.scss";
-import ButtonAdd from "../global/ButtonAdd";
 import ProductQuantity from "./ProductQuantity";
 import Comments from "../Product/Comments";
-import { Link } from "react-router-dom";
+
+
 
 function DetailProduct({ producto }) {
   return (
@@ -16,7 +16,7 @@ function DetailProduct({ producto }) {
           <p>
             Precio: S/<span>{producto.price}</span>
           </p>
-          <ProductQuantity />
+          <ProductQuantity producto={producto} />
           <h4>Description</h4>
           <p>{producto.description}</p>
           <h4>Features</h4>

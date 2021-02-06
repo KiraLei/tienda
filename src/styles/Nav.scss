@@ -37,9 +37,7 @@ nav {
 
       padding: 8px;
     }
-    :hover {
-      color: #02590f;
-    }
+   
   }
 }
 .navbar {
@@ -47,7 +45,7 @@ nav {
   flex-direction: column;
 }
 .line {
-  background-color: #849626;
+  background-color: #92331b;
   width: 100%;
   height: 15px;
   padding-left: 250px;
@@ -78,9 +76,26 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: royalblue;
+  background-color: #fff;
   z-index: 2;
   box-shadow: -0.3rem 0 0.3rem rgba(0, -0, -0, -0.2);
+
+  div{
+    padding: 2rem 0 2rem 0;
+    background-color: #92331b;
+    display: flex;
+    color: #fff;
+    justify-content: space-evenly;
+  }
+  button{
+    background-color: #92331b;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+  }
+  button:focus{
+    outline:none
+  }
 }
 
 .close {
@@ -88,4 +103,15 @@ nav {
 }
 .open {
   display: block;
+}
+
+.li-minicart{
+
+}
+
+.small-img{
+  border-radius: 50%;
+  margin-left: 2rem;
+  max-width: 50px;
+  max-height: 50px;
 }

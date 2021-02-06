@@ -7,6 +7,8 @@ import ItemDetailContainer from "../src/components/Product/ItemDetailContainer";
 import Error404 from "../src/components/global/Error404/";
 import Us from "./components/Us/index";
 import Contact from "./components/Contact/index";
+import Cart from "../src/components/Cart/index";
+import Checkout from "../src/components/Checkout/index";
 import { Store } from "../src/store";
 import { useState } from "react";
 
@@ -14,7 +16,7 @@ import { useState } from "react";
 function App() {
   const [data, setData] = useState({
     items: [],
-    quantity: 15,
+    quantity: 0,
   });
 
   return (
@@ -36,6 +38,12 @@ function App() {
           </Route>
           <Route exact path="/Contact">
             <Contact />
+          </Route>
+          <Route exact path="/Cart">
+            <Cart />
+          </Route>
+          <Route exact path="/Checkout">
+            <Checkout />
           </Route>
           <Route path="*">
             <Error404 />

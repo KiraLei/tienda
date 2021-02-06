@@ -19,8 +19,7 @@ function Cards({titulo, precio, cantidad, id, imagen}) {
           </p>
           
        <Link to={`/item/${id}`}>detalles</Link>
-          <ProductQuantity/>
-          <ButtonAdd/>
+         
         </div>
       </div>
   );
