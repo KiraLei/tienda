@@ -19,7 +19,7 @@ function ItemDetailContainer() {
       .then((doc) => {
         if (doc.exists) {
           setProducto(doc.data());
-          console.log(doc.data());
+         // console.log(doc.data());
           //console.log('holaaa');
         }
       })

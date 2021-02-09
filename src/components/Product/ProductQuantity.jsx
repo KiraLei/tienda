@@ -17,7 +17,7 @@ function ProductQuantity(producto) {
       quantity: data.quantity + quantity,
       items:[...data.items, producto ],
     });
-    history.push('/cart')
+    //history.push('/cart');
   };
 
   //console.log(data);
