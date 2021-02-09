@@ -3,17 +3,76 @@ import "../../styles/Cards.scss";
 import Cards from "./CardProduct";
 import { products } from "../../products";
 import { useParams } from "react-router-dom";
+import { getFirestore } from "../../db";
+import spiner from "../../assets/logoreal1.png";
 
 function ListProducts() {
   const [items, setItems] = useState([]);
   const { categoryid } = useParams();
+  const db = getFirestore();
   // console.log(categoryid);
 
+  const getProducts = () => {
+    if(categoryid){
+      db.collection("productos").where("category", "==", categoryid)
+      .get()
+      .then((docs) => {
+        let arr = [];
+        docs.forEach((doc) => {
+          arr.push({ id: doc.id, data: doc.data() });
+          
+          //console.log(doc.data());
+        });
+        console.log(arr);
+        setItems(arr);
+      })
+      .catch((e) => console.log(e));
+
+    }else{
+      db.collection("productos").where("outstanding", "==", true)
+      .get()
+      .then((docs) => {
+        let arr = [];
+        docs.forEach((doc) => {
+          arr.push({ id: doc.id, data: doc.data() });
+          
+          //console.log(doc.data());
+        });
+        console.log(arr);
+        setItems(arr);
+      })
+      .catch((e) => console.log(e));
+
+    }
+
+  };
+
+  
+/*
+  const getProducts = () => {
+    db.collection("productos").where("outstanding", "==", false)
+      .get()
+      .then((docs) => {
+        let arr = [];
+        docs.forEach((doc) => {
+          arr.push({ id: doc.id, data: doc.data() });
+          
+          //console.log(doc.data());
+        });
+        console.log(arr);
+        setItems(arr);
+      })
+      .catch((e) => console.log(e));
+  };*/
+
+  /*
   const getProducts = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(products);
     }, 0);
-  });
+  }); */
+  /*
+
   const callProduct = () => {
     getProducts.then((rta) => {
       if (categoryid) {
@@ -29,34 +88,35 @@ function ListProducts() {
         setItems(productRelevant);
       }
     });
-  };
+  };*/
 
-  useEffect(() => callProduct(), [categoryid]);
-
-  /*
+  /*useEffect(() => callProduct(), [categoryid]);*/
   useEffect(() => {
-    getProducts.then((rta) => setItems(rta));
-  }, [items]);*/
-  /*  <h2>{categoryid.split('-').join('')}</h2> */
+    getProducts();
+  }, [categoryid]);
 
   return (
     <div className="container cards">
       {items.length ? (
         <>
+        
           {items.map((item) => (
             <Cards
               key={item.id}
               id={item.id}
-              imagen={item.img}
-              titulo={item.title}
-              precio={item.price}
-              cantidad={item.quantity}
+              imagen={item.data.img}
+              titulo={item.data.title}
+              precio={item.data.price}
+              cantidad={item.data.quantity}
               producto={items}
             ></Cards>
           ))}
         </>
       ) : (
-        <p>Cargando items...</p>
+        <div className="div-spiner">
+          <img className="spiner" src={spiner} alt="spiner" />
+          <p>Cargando...</p>
+        </div>
       )}
     </div>
   );

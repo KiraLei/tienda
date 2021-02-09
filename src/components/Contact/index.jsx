@@ -2,12 +2,12 @@ import "../Contact/Contact.scss";
 import contact from "../../assets/contact.svg";
 const Contact = () => {
   return (
-    <div className="container">
-      <section class="containere about-us">
-        <h2 class="title">Contactanos </h2>
-        <div class="container-about-us">
-          <img src={contact} alt='imagen' class="image-about-us" />
-          <div class="content-texts">
+    <div className="container ">
+      <section className="containere about-us">
+        <h2 className="title">Contactanos </h2>
+        <div className="container-about-us">
+          <img src={contact} alt='imagen' className="image-about-us" />
+          <div className="content-texts">
             <h3>
               <span>1</span> Numeros Telefonicos
             </h3>

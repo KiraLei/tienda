@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import "../../styles/ProductQuantity.scss";
+import "../../styles/ButtonAdd.scss";
 import { Store } from "../../store";
 import { useHistory } from "react-router-dom";
 

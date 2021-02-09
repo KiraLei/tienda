@@ -1,5 +1,5 @@
 import { useState } from "react";
-import  "../../styles/DetailAndComment.scss";
+import "../../styles/DetailAndComment.scss";
 
 const Comments = () => {
   //const [nombre, setName] = useState("");
@@ -33,31 +33,45 @@ const Comments = () => {
   };
 
   return (
-    <section>
-      <h2>Deja un comentario</h2>
+    <section className="section-comment">
       <ul className="ul-comment">
+        <h2>Comentarios</h2>
+        <li>
+          <img className='img-comment' src={"https://i.pravatar.cc/50"} alt="foto" />
+          <div>
+            <p>Karla</p>
+            <p>Fue la mejor compra que he hecho, me gusto !</p>
+          </div>
+         
+        </li>
+
         {totalComments.map((comment, index) => (
-          <li key={index}>
-            <p>{comment.name}</p>
-            <p>{comment.comment}</p>
-          </li>
+          <>
+            <li key={index}>
+              <img className='img-comment' src={"https://i.pravatar.cc/50"} alt="foto" />
+              <div>
+                <p>{comment.name}</p>
+                <p>{comment.comment}</p>
+              </div>
+            </li>
+          </>
         ))}
       </ul>
 
-      <form onSubmit={handleSubmitComment}>
+      <form className="form-comment" onSubmit={handleSubmitComment}>
+        <h2>Deja un comentario</h2>
         <label>Nombre</label>
         <input
           type="text"
           name="name"
           value={formData.name}
           onChange={handleChangeForm}
-          
         />
         <label>Comentario</label>
         <textarea
           name="comment"
           cols="30"
-          rows="10"
+          rows="5"
           value={formData.comment}
           onChange={handleChangeForm}
         />

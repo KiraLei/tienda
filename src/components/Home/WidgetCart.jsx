@@ -1,6 +1,7 @@
 import "../../styles/Nav.scss";
 import { useContext } from "react";
 import { Store } from "../../store";
+import { Link } from "react-router-dom";
 
 function WidgetCart({ show, action }) {
   const [data, setData] = useContext(Store);
@@ -14,13 +15,16 @@ function WidgetCart({ show, action }) {
       </div>
 
       {data.items.map((item) => (
-        <ul className="li-minicart">
-          <li>
-            <img className="small-img" src={item.producto.img} alt="" />
-            {item.producto.title}
-          </li>
-        </ul>
+        
+          <ul className="li-minicart">
+            <li>
+              <img className="small-img" src={item.producto.img} alt="" />
+              {item.producto.title}
+            </li>
+          </ul>
+        
       ))}
+      <Link to={`/cart`}><button className="btn btn-efect btn-mini">Comprar</button></Link>
     </div>
   );
 }

@@ -1,13 +1,13 @@
-.new{
-    color: blue;
-}
-.parrafo{
-    color: brown;
-}
-.container{
-    min-height: calc(100vh - 330px - 100px); 
-    
+body {
+  font-family: "Rubik", sans-serif;
 }
 
-
-    
+.new {
+  color: blue;
+}
+.parrafo {
+  color: brown;
+}
+.container {
+  min-height: calc(100vh - 330px - 100px);
+}

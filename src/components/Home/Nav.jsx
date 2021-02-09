@@ -1,4 +1,5 @@
-import logo from "../../assets/logoreal1.png";
+//import logo from "../../assets/logoreal1.png";
+import logo from "../../assets/logo.png";
 import "../../styles/Nav.scss";
 import CartWidget from "./CartWidget";
 import { NavLink, Link } from "react-router-dom";
@@ -40,6 +41,7 @@ function Nav() {
           </li>*/
 
   return (
+    <>
     <div className="navbar">
       <nav>
         <Link to={"/"}> <img className="logo" src={logo} alt="logo" /> </Link>
@@ -55,6 +57,7 @@ function Nav() {
       </nav>
       <div className="line"></div>
     </div>
+ </>
   );
 }
 export default Nav;
