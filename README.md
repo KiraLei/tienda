@@ -16,6 +16,16 @@ npm install
 npm run start
 ```
 
+## Construido con 🛠️
+
+_Este proyecto fue construidos con estas tecnologías_
+
+* React
+* Sass
+* Firebase
+
+
 ## Autores ✒️
 _Mirian Anais Quispe Sarmiento_
+
 ⌨️ con ❤️ por [Mirian](https://github.com/KiraLei) 😊
