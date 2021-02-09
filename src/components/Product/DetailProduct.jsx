@@ -3,12 +3,11 @@ import ProductQuantity from "./ProductQuantity";
 import Comments from "../Product/Comments";
 
 
-
 function DetailProduct({ producto }) {
   return (
     <>
       <div className="cont">
-        <figure>
+        <figure className="img">
           <img src={`${producto.img}`} alt="imagen producto" />
         </figure>
         <div className="information">
@@ -26,7 +25,6 @@ function DetailProduct({ producto }) {
             Size: {producto.size}
           </p>
         </div>
-        <div className="line-division" />
       </div>
       <Comments />
     </>

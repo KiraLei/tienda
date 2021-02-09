@@ -1,6 +1,4 @@
 import "../../styles/Cards.scss";
-import ButtonAdd from '../global/ButtonAdd';
-import ProductQuantity from './ProductQuantity';
 import { Link } from "react-router-dom";
 
 function Cards({titulo, precio, cantidad, id, imagen}) {
@@ -18,7 +16,7 @@ function Cards({titulo, precio, cantidad, id, imagen}) {
             Precio: S/ <span>{precio}</span>
           </p>
           
-       <Link to={`/item/${id}`}>detalles</Link>
+       <Link to={`/item/${id}`}><button className="btn btn-efect">Detalles</button></Link>
          
         </div>
       </div>

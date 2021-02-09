@@ -4,50 +4,6 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  form {
-    padding-left: 5%;
-    display: flex;
-    flex-direction: column;
-
-    input,
-    textarea,
-    input[type="text"] {
-      border: 1px solid #f6f6f6;
-      border-radius: 3px;
-      background-color: #fff;
-      padding-left: 10px;
-    }
-
-    input[type="text"] {
-      max-width: 200px;
-      width: 100%;
-      height: 30px;
-    }
-    textarea {
-      max-width: 400px;
-      width: 100%;
-    }
-    input[type="submit"] {
-      margin-top: 20px;
-      max-width: 150px;
-      padding: 0.5rem;
-      width: 100%;
-      margin-bottom: 40px;
-      background-color: #1aaa9d;
-      color: #fff;
-    }
-    label {
-      margin-top: 10px;
-      margin-bottom: 5px;
-    }
-    textarea:focus,
-    input:focus {
-      border-color: rgb(44, 155, 170);
-      box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
-        0 0 8px rgba(65, 197, 230, 0.6);
-      outline: 0 none;
-    }
-  }
 }
 
 .ul-comment {
@@ -56,10 +12,26 @@
 
   li {
     margin-bottom: 10px;
+    display: flex;
+
     p {
-      padding: 0% 0% 0% 0%;
+      padding: 0% 0% 0% 20px;
       display: block;
+     
     }
+    
+    div {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .img-comment {
+    border-radius: 20px;
+    object-fit: contain;
   }
 }
 .line-division {
@@ -75,6 +47,7 @@ section {
   padding-left: 80px;
   padding-right: 20px;
   padding-top: 40px;
+  padding-bottom: 30px;
   border-radius: 1.5rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
 }
@@ -92,4 +65,78 @@ section {
   li::first-letter {
     text-transform: uppercase;
   }
+}
+
+.form-comment {
+  margin: 0 4rem 100px;
+  position: relative;
+  background: #ffffff;
+  max-width: 360px;
+  border-radius: 10px;
+  padding: 10px 45px 30px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form-comment input,
+.form-comment textarea {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.form-comment button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #38a69b;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form-comment button:hover,
+.form-comment button:active,
+.form-comment button:focus {
+  background: #1f6373;
+}
+textarea:focus,
+input:focus {
+  border-color: #38a69b;
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 8px rgba(65, 197, 230, 0.6);
+  outline: 0 none;
+}
+
+.section-comment {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail-container{
+  section{
+    padding-left: 5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+  }
+  
+}
+.error{
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
 }

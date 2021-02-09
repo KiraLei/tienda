@@ -1,13 +1,13 @@
 import "../Us/Us.scss";
-import eco from "../../assets/eco1.svg";
+import eco from "../../assets/eco111.svg";
 const Us = () => {
   return (
     <div className="container">
-      <section class="containere about-us">
-        <h2 class="title">Nosotros </h2>
-        <div class="container-about-us">
-          <img src={eco} alt='imagen' class="image-about-us" />
-          <div class="content-texts">
+      <section className="containere about-us">
+        <h2 className="title">Nosotros </h2>
+        <div className="container-about-us">
+          <img src={eco} alt='imagen' className="image-about-us" />
+          <div className="content-texts">
             <h3>
               <span>1</span>Los mejores productos
             </h3>

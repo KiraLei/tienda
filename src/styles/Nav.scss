@@ -5,26 +5,17 @@
 }
 nav {
   font-family: "Rubik", sans-serif;
-
-  font-size: 1rem;
+  font-size: 18px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 2px 2px 5px #999;
-  background: rgba(249, 255, 251, 0.1);
+  background-color: #2d9aa6;
   height: 300px;
   .logo {
-    width: 200px;
-    height: 200px;
-    animation: spin 20s linear infinite;
+    width: 70%;
+    height: 70%;
   }
-
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
   ul {
     display: flex;
     list-style: none;
@@ -32,12 +23,10 @@ nav {
 
     a {
       text-decoration: none;
-      color: #384014;
+      color: #fff;
       font-weight: 500;
-
       padding: 8px;
     }
-   
   }
 }
 .navbar {
@@ -45,7 +34,7 @@ nav {
   flex-direction: column;
 }
 .line {
-  background-color: #92331b;
+  background-color: #a6464e;
   width: 100%;
   height: 15px;
   padding-left: 250px;
@@ -62,8 +51,8 @@ nav {
   span {
     position: relative;
     font-size: 12px;
-    background-color: #02730a;
-    color: #fff;
+    background-color: #fff;
+    color: #1d1c26;
     padding: 0.2rem 0.45rem;
     border-radius: 50% 50%;
     bottom: 25px;
@@ -80,21 +69,21 @@ nav {
   z-index: 2;
   box-shadow: -0.3rem 0 0.3rem rgba(0, -0, -0, -0.2);
 
-  div{
+  div {
     padding: 2rem 0 2rem 0;
     background-color: #92331b;
     display: flex;
     color: #fff;
     justify-content: space-evenly;
   }
-  button{
+  button {
     background-color: #92331b;
     border: none;
     font-size: 2rem;
     color: #fff;
   }
-  button:focus{
-    outline:none
+  button:focus {
+    outline: none;
   }
 }
 
@@ -105,13 +94,20 @@ nav {
   display: block;
 }
 
-.li-minicart{
-
+.li-minicart {
+  margin-bottom: 50px !important;
 }
 
-.small-img{
+.small-img {
   border-radius: 50%;
   margin-left: 2rem;
   max-width: 50px;
   max-height: 50px;
+}
+.btn-mini{
+  font-size: 16px !important;
+  position: absolute;
+  width: 100% !important;
+  max-width: 90% !important;
+ 
 }

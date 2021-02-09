@@ -1,21 +1,29 @@
 import { useContext } from "react";
 import { Store } from "../../store";
 import { Link } from "react-router-dom";
+import "../Cart/Cart.scss";
 
 const Cart = () => {
   const [data, setData] = useContext(Store);
   return (
-    <div className="container">
-      <h1>Producto(s) en el carrito</h1>
-      {data.items.map((item) => (
-        <ul className="li-minicart">
-          <li>
-            <img className="small-img" src={item.producto.img} alt="" />
-            {item.producto.title}
-          </li>
-        </ul>
-      ))}
-      <Link to={"/Checkout"}><button>Finalizar compra</button></Link> 
+    <div className="container carte">
+      <div className="align">
+        <div>
+          <h1>Producto(s) en el carrito</h1>
+
+          {data.items.map((item) => (
+            <ul className="ul-birgcart">
+              <li>
+                <img className="big-img" src={item.producto.img} alt="" />
+                <p>{item.producto.title}</p>
+              </li>
+            </ul>
+          ))}
+        </div>
+        <Link to={"/Checkout"} className="button-align">
+          <button>Finalizar compra</button>
+        </Link>
+      </div>
     </div>
   );
 };

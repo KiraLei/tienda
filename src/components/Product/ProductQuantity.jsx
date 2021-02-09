@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import "../../styles/ProductQuantity.scss";
+import "../../styles/ButtonAdd.scss";
 import { Store } from "../../store";
 import { useHistory } from "react-router-dom";
 
@@ -16,7 +17,7 @@ function ProductQuantity(producto) {
       quantity: data.quantity + quantity,
       items:[...data.items, producto ],
     });
-    history.push('/cart')
+    //history.push('/cart');
   };
 
   //console.log(data);
