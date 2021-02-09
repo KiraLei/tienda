@@ -38,7 +38,7 @@ function ListProducts() {
           
           //console.log(doc.data());
         });
-        console.log(arr);
+        //console.log(arr);
         setItems(arr);
       })
       .catch((e) => console.log(e));

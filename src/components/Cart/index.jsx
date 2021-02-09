@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../Cart/Cart.scss";
 
 const Cart = () => {
+  /* eslint-disable no-eval */
   const [data, setData] = useContext(Store);
   return (
     <div className="container carte">

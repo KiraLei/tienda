@@ -5,6 +5,7 @@ import CartWidget from "./CartWidget";
 import { NavLink, Link } from "react-router-dom";
 
 function Nav() {
+  /* eslint-disable no-eval */
   const menuLinks = [
     {
       text: "Bolsas",
